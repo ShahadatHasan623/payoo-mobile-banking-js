@@ -13,10 +13,14 @@
     <section class="max-w-lg min-h-screen mx-auto py-6 bg-gray-200">
         <header>
             <nav class="flex items-center justify-around">
-                <img src="./assests/Group.png" alt="">
-                <div>
-                    <h1 id="" class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
-                    <p class="border border-indigo-600 rounded p-1">available balance</p>
+                <div class="flex items-center gap-3">
+                    <div>
+                        <img src="./assests/Group.png" alt="">
+                    </div>
+                    <div>
+                        <h1 id="" class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
+                        <p class="border border-indigo-600 rounded p-1">available balance</p>
+                    </div>
                 </div>
                 <button class="btn">Logout</button>
             </nav>
@@ -27,7 +31,8 @@
                     and </p>
                 <div class="cards grid grid-cols-3 gap-2 p-2 mt-8">
                     <!-- box-1  -->
-                    <div id="add-money-box" class="box border cursor-pointer border-black flex flex-col justify-center rounded-xl p-3">
+                    <div id="add-money-box" id="addmoney"
+                        class="box border cursor-pointer border-black flex flex-col justify-center rounded-xl p-3">
                         <img class="w-8 mx-auto" src="./assests/wallet 1.png" alt="">
                         <h3 class="text-center">Add Money</h3>
                     </div>
@@ -59,14 +64,14 @@
                 </div>
 
                 <section id="add-money-id">
-                    <h2 class="text-xl font-bold  ">Add Money</h2>
+                    <h2 class="text-xl font-bold ">Add Money</h2>
                     <div class="">
                         <div class="hero-content flex-col lg:flex-row-reverse">
-                            <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                            <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
                                 <form class="card-body">
                                     <label class="form-control w-full max-w-xs">
-                                        <legend>Select Bank</legend>
-                                        <select class="select select-bordered">
+                                        <legend class="text-white px-1 mb-2">Select Bank</legend>
+                                        <select class="select rounded-full">
                                             <option disabled selected>select bank</option>
                                             <option value="Bkash">Bkash</option>
                                             <option value="Nagad">Nagad</option>
@@ -75,30 +80,30 @@
                                     </label>
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">Account number</span>
+                                            <span class="label-text text-white">Account number</span>
                                         </label>
                                         <input id="account-number" value="01301608623" type="number"
-                                            placeholder="Your type number" class="input input-bordered" required />
+                                            placeholder="Your type number" class="input rounded-full" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">Amount</span>
+                                            <span class="label-text text-white">Bank Amount</span>
                                         </label>
                                         <input id="amount" type="number" placeholder="Your amount"
-                                            class="input input-bordered" required />
+                                            class="input rounded-full" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">PIN</span>
+                                            <span class="label-text text-white">PIN</span>
                                         </label>
                                         <input id="pin" value="1234" type="text" placeholder="Your Pin Number"
-                                            class="input input-bordered" required />
+                                            class="input rounded-full" required />
                                         <label class="label">
-                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
-                                        <button id="add-mony" class="btn btn-primary">Add Money</button>
+                                        <button id="add-mony" class="btn btn-primary rounded-full">Add Money</button>
                                     </div>
                                 </form>
                             </div>
@@ -107,37 +112,37 @@
                 </section>
                 <!-- casout section  -->
                 <section id="casout">
-                    <h2 class="text-xl font-bold text-center ">Cash Out</h2>
+                    <h2 class="text-xl font-bold px-3 ">Cash Out</h2>
                     <div class="">
                         <div class="hero-content flex-col lg:flex-row-reverse">
-                            <div class="card bg-base-100 w-full max-w-sm shrink-0 ">
+                            <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
                                 <form class="card-body">
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">Agent Number</span>
+                                            <span class="label-text text-white">Agent Number</span>
                                         </label>
                                         <input id="account-number" value="01301608623" type="number"
-                                            placeholder="Your type number" class="input input-bordered" required />
+                                            placeholder="Your type number" class="input rounded-full" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">Amount</span>
+                                            <span class="label-text text-white">Amount</span>
                                         </label>
-                                        <input id="amount" type="number" placeholder="Your amount"
-                                            class="input input-bordered" required />
+                                        <input id="cashout-amount" type="number" placeholder="Your amount"
+                                            class="input rounded-full" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
-                                            <span class="label-text">PIN</span>
+                                            <span class="label-text text-white">Pin Number</span>
                                         </label>
-                                        <input id="pin" value="1234" type="text" placeholder="Your Pin Number"
-                                            class="input input-bordered" required />
+                                        <input id="cashout-pin" value="1234" type="text" placeholder="Your Pin Number"
+                                            class="input rounded-full" required />
                                         <label class="label">
-                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
-                                        <button id="cashout-btn" class="btn btn-primary">Cash Out</button>
+                                        <button id="cashout-btn" class="btn btn-primary rounded-full">Cash Out</button>
                                     </div>
                                 </form>
                             </div>
@@ -148,6 +153,7 @@
         </header>
     </section>
     <script src="./js/toggol.js"></script>
+    <script src="./js/cashout.js"></script>
     <!-- <script src="./js/addMony.js"></script> -->
 </body>
 

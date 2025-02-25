@@ -1,10 +1,11 @@
 document.getElementById("casout").style.display = "none";
 document.getElementById("add-money-id").style.display = "block";
 document.getElementById("add-money-box")
-    .addEventListener('click', function (event) {
+    .addEventListener('click', function () {
        
         document.getElementById("casout").style.display = "none";
         document.getElementById("add-money-id").style.display = "block";
+        
     })
 
 document.getElementById("casout-box")
