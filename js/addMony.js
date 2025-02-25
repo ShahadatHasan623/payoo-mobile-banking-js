@@ -1,17 +1,21 @@
 document.getElementById('add-mony')
-.addEventListener('click',function(event){
-    event.preventDefault();
-    const amount =document.getElementById("amount").value;
-    const convertAmount =parseFloat(amount);
-    const pin =document.getElementById("pin").value;
-    const pinConvert =parseInt(pin);
-    const mainBalance =document.getElementById("main-balance").innerText;
-    const convertMainBalance =parseFloat(mainBalance);
-    if(pinConvert === 1234){
-        const sum = convertMainBalance + convertAmount;
-        document.getElementById("main-balance").innerText =sum;
-    }
-    else{
-        alert("Enter Valid Pin");
-    }
-})
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+        const amount =getInputValue("amount");
+        const mainBalance =getMainBalance("main-balance")
+        const pin =getPinValue("pin");
+        const accountNumber =document.getElementById("account-number").value ;
+        if(accountNumber.length === 11){
+            if(pin===1234){
+                const sum =mainBalance + amount ;
+                setInnerTextvlue("main-balance",sum)
+            }
+            else{
+                alert("Enter Your Valid Pin");
+            }
+        }
+        else{
+            alert("Enter Your Valid Number")
+        }
+
+    })

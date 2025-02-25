@@ -7,12 +7,24 @@
     <title>main</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/659dc3132f.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-slate-800">
-    <section class="max-w-lg min-h-screen mx-auto py-6 bg-gray-200">
+    <section class="max-w-lg min-h-screen mx-auto bg-gray-200 py-5">
         <header>
-            <nav class="flex items-center justify-around">
+            <div class="flex justify-between items-center px-6 mb-5">
+                <div>
+                    <h1>9:41</h1>
+                </div>
+                <div class="flex items-center gap-3">
+                    <p><i class="fa-solid fa-signal"></i></p>
+                    <p><i class="fa-solid fa-wifi"></i></p>
+                    <p><i class="fa-solid fa-battery-full"></i></p>
+                </div>
+            </div>
+            <nav class="flex items-center justify-between px-6">
                 <div class="flex items-center gap-3">
                     <div>
                         <img src="./assests/Group.png" alt="">
@@ -27,44 +39,48 @@
             <hr class="border-none h-[1px] w-full bg-gray-500 mt-4">
             <section class="mt-4 p-2">
                 <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
-                <p class="text-gray-600 ">Enjoy easy and convenient financial services with us. Cashout charge is low
+                <p class="text-gray-600 px-3">Enjoy easy and convenient financial services with us. Cashout charge is low
                     and </p>
                 <div class="cards grid grid-cols-3 gap-2 p-2 mt-8">
                     <!-- box-1  -->
-                    <div id="add-money-box" id="addmoney"
-                        class="box border cursor-pointer border-black flex flex-col justify-center rounded-xl p-3">
+                    <div id="add-money-box"
+                        class="box border cursor-pointer border-black hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600 flex flex-col justify-center rounded-xl p-3">
                         <img class="w-8 mx-auto" src="./assests/wallet 1.png" alt="">
-                        <h3 class="text-center">Add Money</h3>
+                        <h3 class="text-center ">Add Money</h3>
                     </div>
                     <!-- box-2  -->
-                    <div id="casout-box" class="box border border-black flex flex-col justify-center rounded-xl p-3">
+                    <div id="casout-box"
+                        class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/send 1.png" alt="">
                         <h3 class="text-center">Cashout</h3>
                     </div>
                     <!-- box-3  -->
-                    <div class="box border border-black flex flex-col justify-center rounded-xl p-3">
+                    <div
+                        class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/money 1.png" alt="">
                         <h3 class="text-center">Transfer Mony</h3>
                     </div>
                     <!-- box-4  -->
-                    <div class="box border border-black flex flex-col justify-center rounded-xl p-3">
+                    <div
+                        class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/financial 1.png" alt="">
                         <h3 class="text-center">Get Bonus</h3>
                     </div>
                     <!-- box-5  -->
-                    <div class="box border border-black flex flex-col justify-center rounded-xl p-3 ">
+                    <div
+                        class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/purse 1.png" alt="">
                         <h3 class="text-center">Pay Bill</h3>
                     </div>
                     <!-- box-6  -->
-                    <div class="box border border-black flex flex-col justify-center p-3 rounded-xl">
+                    <div
+                        class="box border border-black flex flex-col justify-center p-3 rounded-xl hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/transaction 1.png" alt="">
                         <h3 class="text-center">Transaction</h3>
                     </div>
                 </div>
-
-                <section id="add-money-id">
-                    <h2 class="text-xl font-bold ">Add Money</h2>
+                <section id="add-money">
+                    <h2 class="text-xl font-bold p-3">Add Money</h2>
                     <div class="">
                         <div class="hero-content flex-col lg:flex-row-reverse">
                             <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
@@ -99,7 +115,8 @@
                                         <input id="pin" value="1234" type="text" placeholder="Your Pin Number"
                                             class="input rounded-full" required />
                                         <label class="label">
-                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot password?</a>
+                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot
+                                                password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
@@ -138,7 +155,8 @@
                                         <input id="cashout-pin" value="1234" type="text" placeholder="Your Pin Number"
                                             class="input rounded-full" required />
                                         <label class="label">
-                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot password?</a>
+                                            <a href="#" class="label-text-alt link link-hover text-white">Forgot
+                                                password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
@@ -154,7 +172,7 @@
     </section>
     <script src="./js/toggol.js"></script>
     <script src="./js/cashout.js"></script>
-    <!-- <script src="./js/addMony.js"></script> -->
+    <script src="./js/addMony.js"></script>\
+    <script src="./utilities/utilities.js"></script>
 </body>
-
 </html>

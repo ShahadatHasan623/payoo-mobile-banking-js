@@ -1,15 +1,15 @@
 document.getElementById("casout").style.display = "none";
-document.getElementById("add-money-id").style.display = "block";
 document.getElementById("add-money-box")
     .addEventListener('click', function () {
-       
-        document.getElementById("casout").style.display = "none";
-        document.getElementById("add-money-id").style.display = "block";
-        
-    })
+        handleToggle("add-money", "block");
+        handleToggle("casout", "none");
+    });
 
 document.getElementById("casout-box")
     .addEventListener('click', function () {
-        document.getElementById("add-money-id").style.display = "none";
-        document.getElementById("casout").style.display = "block";
-    })
+         handleToggle("casout","block");
+         handleToggle("add-money","none");
+    });
+function handleToggle(id, status) {
+    document.getElementById(id).style.display = status;
+}
