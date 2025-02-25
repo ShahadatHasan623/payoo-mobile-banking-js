@@ -12,6 +12,6 @@ document.getElementById('add-mony')
         document.getElementById("main-balance").innerText =sum;
     }
     else{
-        alert("pin sothik na")
+        alert("Enter Valid Pin");
     }
 })
