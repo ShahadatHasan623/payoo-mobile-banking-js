@@ -55,25 +55,25 @@
                         <h3 class="text-center">Cashout</h3>
                     </div>
                     <!-- box-3  -->
-                    <div
+                    <div id="transfer-box"
                         class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/money 1.png" alt="">
                         <h3 class="text-center">Transfer Mony</h3>
                     </div>
                     <!-- box-4  -->
-                    <div
+                    <div id="get-bonus-box"
                         class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/financial 1.png" alt="">
                         <h3 class="text-center">Get Bonus</h3>
                     </div>
                     <!-- box-5  -->
-                    <div
+                    <div id="pay-bill-box"
                         class="box border border-black flex flex-col justify-center rounded-xl p-3 hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/purse 1.png" alt="">
                         <h3 class="text-center">Pay Bill</h3>
                     </div>
                     <!-- box-6  -->
-                    <div
+                    <div id="transaction-box"
                         class="box border border-black flex flex-col justify-center p-3 rounded-xl hover:border-blue-600 hover:border-2 hover:bg-blue-100 hover:text-blue-600">
                         <img class="w-8 mx-auto" src="./assests/transaction 1.png" alt="">
                         <h3 class="text-center">Transaction</h3>
@@ -87,7 +87,7 @@
                                 <form class="card-body">
                                     <label class="form-control w-full max-w-xs">
                                         <legend class="text-white px-1 mb-2">Select Bank</legend>
-                                        <select class="select rounded-full">
+                                        <select id="allbank" class="select rounded-full">
                                             <option disabled selected>select bank</option>
                                             <option value="Bkash">Bkash</option>
                                             <option value="Nagad">Nagad</option>
@@ -167,12 +167,130 @@
                         </div>
                     </div>
                 </section>
+                <!-- transfer money  -->
+                <section id="transfer-money">
+                    <h1 class="text-2xl font-bold p-3">Transfer Money</h1>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">User Account Number</span>
+                                    </label>
+                                    <input id="account-number" value="01301608623" type="number"
+                                        placeholder="Your type number" class="input rounded-full" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">Amount</span>
+                                    </label>
+                                    <input id="cashout-amount" type="number" placeholder="Your amount"
+                                        class="input rounded-full" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">Pin Number</span>
+                                    </label>
+                                    <input id="cashout-pin" value="1234" type="text" placeholder="Your Pin Number"
+                                        class="input rounded-full" required />
+                                    <label class="label">
+                                        <a href="#" class="label-text-alt link link-hover text-white">Forgot
+                                            password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="cashout-btn" class="btn btn-primary rounded-full">Transfer Mony</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- get bonus -->
+                 <section id="get-bonus">
+                    <h1 class="text-2xl p-3 font-bold">Get Bonus</h1>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">Enter Bonus Coupon</span>
+                                    </label>
+                                    <input id="account-number"  type="number"
+                                        placeholder="Enter Your Coupon" class="input rounded-full" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="add-mony" class="btn btn-primary rounded-full">Get Bonus</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 </section>
+
+                 <!-- pay bill  -->
+                  <section id="pay-bill">
+                    <h1 class="text=2xl font-bold p-3">Pay Bill</h1>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-slate-800 w-full max-w-sm shrink-0 ">
+                            <form class="card-body">
+                                <label class="form-control w-full max-w-xs">
+                                    <legend class="text-white px-1 mb-2">Select To Pay</legend>
+                                    <select id="allbank" class="select rounded-full">
+                                        <option disabled selected>select bank</option>
+                                        <option value="Bkash">Bkash</option>
+                                        <option value="Nagad">Nagad</option>
+                                        <option value="DDBL">DDBL</option>
+                                    </select>
+                                </label>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">Biller Account number</span>
+                                    </label>
+                                    <input id="account-number" type="number"
+                                        placeholder="Biller account number" class="input rounded-full" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">Amount to pay</span>
+                                    </label>
+                                    <input id="amount" type="number" placeholder="add amount to pay"
+                                        class="input rounded-full" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text text-white">PIN</span>
+                                    </label>
+                                    <input id="pin"  type="text" placeholder="Your Pin Number"
+                                        class="input rounded-full" required />
+                                    <label class="label">
+                                        <a href="#" class="label-text-alt link link-hover text-white">Forgot
+                                            password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="add-mony" class="btn btn-primary rounded-full">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </section>
+                <!-- transfer history section  -->
+                <section id="transaction-history">
+                    <h1 class="text-2xl font-bold p-3">Transaction History </h1>
+                    <div id="transaction-container">
+                        
+                    </div>
+                </section>
             </section>
         </header>
     </section>
     <script src="./js/toggol.js"></script>
     <script src="./js/cashout.js"></script>
-    <script src="./js/addMony.js"></script>\
+    <script src="./js/addMony.js"></script>
     <script src="./utilities/utilities.js"></script>
+    <script type="module" src="./js/transactionHistory.js"></script>
+    <script src="./js/transferMony.js"></script>
+    <script src="./js/getbouns.js"></script>
+    <script src="./js/payBill.js"></script>
 </body>
 </html>
