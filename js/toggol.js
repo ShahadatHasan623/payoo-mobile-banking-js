@@ -1,6 +1,5 @@
-document.getElementById("add-money").style.display ="none";
 document.getElementById("casout").style.display = "none";
-document.getElementById("transaction-history").style.display ="block";
+document.getElementById("transaction-history").style.display ="none";
 document.getElementById("transfer-money").style.display ="none";
 document.getElementById("get-bonus").style.display ="none";
 document.getElementById("pay-bill").style.display ="none";
